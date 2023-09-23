@@ -1,0 +1,134 @@
+[
+    {
+        "id": "11",
+        "nombre": "Corpiño tasa soft negro",
+        "categoria": {
+            "nombre": "corpiños",
+            "id": "corpiños"
+        },
+        "imagen": "./img/sostenes/soutien.01.jpg",
+        "precio": 5000,
+        "stock": 55
+    },
+    {
+        "id": "12",
+        "nombre": "Corpiño encaje blanco",
+        "categoria": {
+            "nombre": "corpiños",
+            "id": "corpiños"
+        },
+        "imagen": "./img/sostenes/soutien.02.png",
+        "precio": 8000,
+        "stock": 10
+    },
+    {
+        "id": "13",
+        "nombre": "Corpiño encaje negro",
+        "categoria": {
+            "nombre": "corpiños",
+            "id": "corpiños"
+        },
+        "imagen": "./img/sostenes/soutien.03.png",
+        "precio": 8000,
+        "stock": 20
+    },
+    {
+        "id": "14",
+        "nombre": "Corpiño armado bordó",
+        "categoria": {
+            "nombre": "corpiños",
+            "id": "corpiños"
+        },
+        "imagen": "./img/sostenes/soutien.04.png",
+        "precio": 8500,
+        "stock": 10
+    },
+    {
+        "id": "21",
+        "nombre": "Colaless basicas x3",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "bombachas"
+        },
+        "imagen": "./img/bombachas/bombacha.01.png",
+        "precio": 3500,
+        "stock": 35
+    },
+    {
+        "id": "22",
+        "nombre": "Colaless encaje x3",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "bombachas"
+        },
+        "imagen": "./img/bombachas/bombacha.02.png",
+        "precio": 4000,
+        "stock": 15
+    },
+    {
+        "id": "23",
+        "nombre": "Tanga regulable x3",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "bombachas"
+        },
+        "imagen": "./img/bombachas/bombacha.03.png",
+        "precio": 2000,
+        "stock": 50
+    },
+    {
+        "id": "24",
+        "nombre": "Tangaless encaje x3",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "bombachas"
+        },
+        "imagen": "./img/bombachas/bombacha.04.jpg",
+        "precio": 2500,
+        "stock": 8
+    },
+    {
+        "id": "25",
+        "nombre": "Tanga Victoria",
+        "categoria": {
+            "nombre": "bombachas",
+            "id": "bombachas"
+        },
+        "imagen": "./img/bombachas/bombacha.05.jpg",
+        "precio": 7500,
+        "stock": 5
+    },
+    {
+        "id": "31",
+        "nombre": "medias encaje",
+        "categoria": {
+            "nombre": "medias",
+            "id": "medias"
+        },
+        "imagen": "./img/medias/medias01.png",
+        "precio": 2500,
+        "stock": 25
+    },
+    {
+        "id": "32",
+        "nombre": "medias lycra negras",
+        "categoria": {
+            "nombre": "medias",
+            "id": "medias"
+        },
+        "imagen": "./img/medias/medias02.png",
+        "precio": 800,
+        "stock": 25
+    },
+    {
+        "id": "33",
+        "nombre": "medias exclusive",
+        "categoria": {
+            "nombre": "medias",
+            "id": "medias"
+        },
+        "imagen": "./img/medias/medias03.png",
+        "precio": 1200,
+        "stock": 25
+    }
+]
