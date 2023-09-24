@@ -15,10 +15,10 @@ const itemsCarrito = document.getElementById("items")
 
 
 //función para la creacion de los contenedores de productos o "tarjetas productos"
-function crearTarjetaProducto (productosPorCategoria) {
+function crearTarjetaProducto(productosPorCategoria) {
 
     ContenedorTarjetaProducto.innerHTML = "";
-    
+
 
     productosPorCategoria.forEach(producto => {
 
@@ -45,7 +45,7 @@ function crearTarjetaProducto (productosPorCategoria) {
 
 BotonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
-       
+
         BotonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
 
@@ -89,14 +89,34 @@ let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");  // rec
 
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
-    actualizaItem ();
-}else{
+    actualizaItem();
+} else {
     productosEnCarrito = []
 }
 
 
 
 function agregarAlCarrito(e) {
+
+    Toastify({                                                      //agregado de libreria!!
+        text: "Producto agregado correctamente!",
+        duration: 3000,
+        close: false,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #EF637E, #f09cad)",
+            borderRadius: "2rem"
+        },
+        onClick: function () { }, // Callback after click
+        offset: {
+            x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        },
+    }).showToast();
+
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
@@ -107,11 +127,11 @@ function agregarAlCarrito(e) {
         productoAgregado.cantidad = 1
         productosEnCarrito.push(productoAgregado)
     }
-    actualizaItem ();
+    actualizaItem();
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
-function actualizaItem (){
+function actualizaItem() {
     let cantidadItems = productosEnCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
     itemsCarrito.innerText = cantidadItems;
 
